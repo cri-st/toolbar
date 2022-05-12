@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Toolbar"
-  s.version      = "0.7.3"
+  s.version      = "2.0.0"
   s.summary      = "Awesome autolayout Toolbar"
   s.description  = <<-DESC
   This toolbar is made with Autolayout.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "11.0"
   s.ios.deployment_target = "11.0"
   s.source       = { :git => "https://github.com/1amageek/Toolbar.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Toolbar/**/*.{swift}"
+  s.source_files  = "Classes", "Sources/Toolbar/**/*.{swift}"
 
 
 end
