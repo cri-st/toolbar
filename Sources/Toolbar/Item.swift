@@ -87,12 +87,12 @@ public extension Toolbar {
         /// The minimum width of the item
         public var minimumWidth: CGFloat {
             if let label: UILabel = self.titleLabel {
-                let size: CGSize = label.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+                let size: CGSize = label.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
                 return self.contentInset.left + size.width + self.contentInset.right
             }
 
             if let view: UIImageView = self.imageView {
-                let size: CGSize = view.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+                let size: CGSize = view.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
                 return self.contentInset.left + size.width + self.contentInset.right
             }
 
@@ -245,12 +245,12 @@ public extension Toolbar {
         public override var intrinsicContentSize: CGSize {
 
             if let label: UILabel = self.titleLabel {
-                let size: CGSize = label.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+                let size: CGSize = label.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
                 return CGSize(width: self.contentInset.left + size.width + self.contentInset.right, height: size.height)
             }
 
             if let view: UIImageView = self.imageView {
-                let size: CGSize = view.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+                let size: CGSize = view.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
                 return CGSize(width: self.contentInset.left + size.width + self.contentInset.right, height: size.height)
             }
 
